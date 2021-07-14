@@ -1,0 +1,31 @@
+@import "../homepage/phone.css";
+@import "../default";
+
+@media (max-width: 768px) {
+  .section-1 {
+    background: $white;
+    &-form {
+      padding: 20px 20px 40px;
+    }
+    &::after {
+      display: none;
+    }
+    & header {
+      margin: 0 auto;
+    }
+    &-header-container-logo {
+      max-width: fit-content;
+    }
+    &-header-container-logo a svg {
+      max-width: 80px;
+    }
+    &-header-container-logo svg {
+      max-width: 100px;
+    }
+  }
+  .burger {
+    @include burger
+  }
+}
+
+

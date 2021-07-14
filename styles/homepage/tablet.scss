@@ -1,0 +1,131 @@
+@import "../default";
+
+@media (max-width: 1300px) {
+  .section-2 {
+    &-dots {
+      display: flex;
+      margin: 20px auto 0;
+      justify-content: center;
+      gap: 14px;
+      &-svg {
+        fill: $active;
+        opacity: 0.2;
+        &:hover {
+          opacity: 0.6;
+        }
+        &:active {
+          opacity: 1;
+        }
+      }
+    }
+    &-container-top {
+      flex-direction: column;
+      padding: 40px 20px 36px;
+      &-left {
+        margin-left: 40px;
+        &:after {
+          display: none;
+        }
+        &-a {
+          border: none;
+          display: none;
+          font-family: TT-Norms-Bold, sans-serif;
+          background: $gradient-red-text-reversed;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          text-align: left;
+          &:first-of-type {
+            display: inline-block;
+          }
+          }
+        }
+      &-right {
+        margin: 0 40px;
+        &-h2 {
+          font-family: TT-Norms-Medium, sans-serif;
+          font-size: 32px;
+          line-height: 38px;
+          font-weight: 100;
+          padding-top: 0;
+          margin-bottom: 20px;
+        }
+        &-p {
+          font-family: TT-Norms-Regular, sans-serif;
+          font-size: 21px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .section-2 {
+    &-container-bottom {
+      &-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  .section-3 {
+    &-grid-container {
+      &-top {
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+      }
+
+      &-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+    }
+    &-container {
+      &-img {
+        display: none;
+        &-mobile {
+          max-width: 160px;
+          display: block;
+          float: left;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .section-4 {
+    &-grid-container {
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      &-brand {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  footer {
+    @include tablet-footer;
+  }
+  .section-1 {
+    &-header-container {
+      position: relative;
+      &-logo {
+        flex: 1;
+        max-width: 155px;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../homepage/tablet.css";
+
+@media (max-width: 1060px) {
+  .section-1 {
+    &-header-container {
+      position: relative;
+      &-logo {
+        max-width: 360px;
+        position: absolute;
+        top: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .section-1 {
+    &-header-container {
+      position: relative;
+      &-info-container {
+        gap: 80px;
+      }
+    }
+  }
+}

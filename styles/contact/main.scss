@@ -1,0 +1,265 @@
+@import "../normalize.css";
+@import "../fonts.css";
+@import "../default";
+
+
+
+@import "phone.css";
+@import "tablet.css";
+
+@import "../homepage/main.css";
+
+.section-1 {
+  &-form {
+    padding: 82px 173px 80px;
+    display: flex;
+    justify-content: center;
+    & form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-right {
+      background: $bg-grey;
+      border-radius: 12px;
+      max-width: 527px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+      &-button {
+        margin: 0 auto;
+        bottom: 40px;
+        padding: 17px;
+        background: $active;
+        box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        max-width: 250px;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.3s background, box-shadow ease-in;
+        border: none;
+        &:hover {
+          background: $active-hover;
+          box-shadow: 0 0 30px rgba(36, 163, 255, 0.5);
+        }
+        &:active {
+          background: $active-active;
+          box-shadow: none;
+        }
+      }
+      &-email {
+        border: none;
+        padding: 10px;
+        max-height: 47px;
+        height: 100%;
+        border-radius: 8px;
+        outline: $accent-red;
+        color: $black;
+        font-size: 18px;
+        line-height: 26px;
+        &::placeholder {
+          color: $text-grey;
+          font-size: 18px;
+          line-height: 26px;
+        }
+        &:focus {
+          border: 2px solid $accent-red;
+        }
+      }
+      &-phone {
+        margin-top: 10px;
+        border: none;
+        padding: 10px;
+        max-height: 47px;
+        height: 100%;
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        outline: $accent-red;
+        color: $black;
+        font-size: 18px;
+        line-height: 26px;
+        &::placeholder {
+          color: $text-grey;
+          font-size: 18px;
+          line-height: 26px;
+        }
+        &:focus {
+          border: 2px solid $accent-red;
+        }
+      }
+      &-label {
+        color: $text-grey;
+        font-family: TT-Norms-Regular, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: block;
+        flex-direction: column;
+      }
+      &-name {
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        max-height: 47px;
+        height: 100%;
+        outline: $accent-red;
+        color: $black;
+        font-size: 18px;
+        line-height: 26px;
+        &::placeholder {
+          color: $text-grey;
+          font-size: 18px;
+          line-height: 26px;
+        }
+        &:focus {
+          border: 2px solid $accent-red;
+        }
+      }
+      &-message {
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        resize: none;
+        max-height: 180px;
+        outline: $accent-red;
+        color: $black;
+        font-size: 18px;
+        line-height: 26px;
+        &::placeholder {
+          color: $text-grey;
+          font-size: 18px;
+          line-height: 26px;
+        }
+        &:focus {
+          border: 2px solid $accent-red;
+        }
+      }
+      &-h1 {
+        @include h1;
+        font-size: 32px;
+        line-height: 38px;
+        margin: 0;
+      }
+    }
+    &-left {
+      max-width: 414px;
+      width: 100%;
+      margin-right: 153px;
+      &-address {
+        border-bottom: 4px solid $separator-grey;
+        padding-bottom: 20px;
+        & p {
+          font-family: TT-Norms-Regular, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 21px;
+          line-height: 30px;
+          color: $main;
+        }
+      }
+      &-phone {
+        font-family: TT-Norms-Regular, sans-serif;
+        font-size: 21px;
+        line-height: 30px;
+        color: $main-alt;
+        padding: 40px 0 20px;
+      }
+      &-email {
+        font-family: TT-Norms-Regular, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 30px;
+        color: $active;
+      }
+      &-facebook {
+        display: flex;
+        align-items: center;
+        border-top: 4px solid $separator-grey;
+        margin-top: 40px;
+        padding-top: 20px;
+        & svg {
+          margin-right: 10px;
+        }
+        &-a {
+          font-family: TT-Norms-Medium, sans-serif;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: $active;
+          max-width: 123px;
+        }
+      }
+    }
+  }
+  &::after {
+    display: none;
+  }
+  &-lang {
+    color: $text-grey;
+    &:first-of-type {
+      color: $white;
+    }
+  }
+  background: $white;
+  & header {
+    margin: 0 auto;
+  }
+  &-header-container {
+    &-info-top {
+      & p {
+        color: $text-grey;
+      }
+      &-a-fb svg {
+        fill: $text-grey;
+      }
+    }
+    &-info-bottom a {
+      color: $active;
+      &:last-of-type {
+        border-bottom: 2px solid $accent-red;
+        color: $accent-red;
+      }
+    }
+    &-logo {
+      display: flex;
+      max-width: 360px;
+    }
+  }
+}
+
+.section-2 {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,250,1) 100%);
+  & img {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    min-height: 500px;
+  }
+  &:before, &:after {
+    display: none;
+  }
+}
+
+footer {
+  @include footer
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.burger {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}

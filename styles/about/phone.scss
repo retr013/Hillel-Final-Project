@@ -1,0 +1,78 @@
+@import "../homepage/phone.css";
+@import "../default";
+
+@media (max-width: 768px) {
+  .section-1 {
+    background: $white;
+    &-achievements {
+      padding: 28px 20px 0;
+      &-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      &-grid-item {
+        &:nth-child(3) {
+          display: none;
+        }
+        &:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+    &-bottom-info-container {
+      padding: 20px 20px 40px;
+      &-left-p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      &-right-h1 {
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
+    &-img-wide {
+      & p {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 20px;
+      }
+    }
+    &-info-container {
+      padding: 20px;
+      &-left {
+        &-h1 {
+        font-size: 32px;
+        line-height: 38px;
+        }
+        &-p {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+    &::after {
+      display: none;
+    }
+    & header {
+      margin: 0 auto;
+    }
+    &-header-container-logo {
+      max-width: fit-content;
+    }
+    &-header-container-logo a svg {
+      max-width: 80px;
+    }
+    &-header-container-logo svg {
+      max-width: 100px;
+    }
+  }
+
+  .display-none {
+    display: initial;
+  }
+
+  .burger {
+    @include burger;
+  }
+}
+
+

@@ -1,0 +1,113 @@
+@import "../homepage/phone.css";
+/* colors */
+/* mixins */
+@media (max-width: 768px) {
+  .section-1 {
+    background: #FFFFFF;
+  }
+  .section-1-achievements {
+    padding: 28px 20px 0;
+  }
+  .section-1-achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-1-achievements-grid-item:nth-child(3) {
+    display: none;
+  }
+  .section-1-achievements-grid-item:nth-child(4) {
+    display: none;
+  }
+  .section-1-bottom-info-container {
+    padding: 20px 20px 40px;
+  }
+  .section-1-bottom-info-container-left-p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .section-1-bottom-info-container-right-h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .section-1-img-wide p {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 20px;
+  }
+  .section-1-info-container {
+    padding: 20px;
+  }
+  .section-1-info-container-left-h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .section-1-info-container-left-p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .section-1::after {
+    display: none;
+  }
+  .section-1 header {
+    margin: 0 auto;
+  }
+  .section-1-header-container-logo {
+    max-width: fit-content;
+  }
+  .section-1-header-container-logo a svg {
+    max-width: 80px;
+  }
+  .section-1-header-container-logo svg {
+    max-width: 100px;
+  }
+
+  .display-none {
+    display: initial;
+  }
+
+  .burger {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 20px;
+    padding: 9px 7px;
+    align-self: center;
+    border-radius: 12px;
+  }
+  .burger:hover {
+    background: #EDEDF7;
+  }
+  .burger:active .burger-line:nth-of-type(1) {
+    opacity: 0;
+  }
+  .burger:active .burger-line:nth-of-type(4) {
+    opacity: 0;
+  }
+  .burger:active .burger-line:nth-of-type(2) {
+    transform: rotate(45deg);
+    background: #F0145A;
+  }
+  .burger:active .burger-line:nth-of-type(3) {
+    transform: rotate(-45deg);
+    background: #F0145A;
+  }
+  .burger-line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 18px;
+    background: #323264;
+    transition: transform 0.3s ease-in-out;
+  }
+  .burger-line:nth-of-type(1) {
+    top: 9px;
+    transition: 0s;
+  }
+  .burger-line:nth-of-type(4) {
+    top: 23px;
+    transition: 0s;
+  }
+}
+
+/*# sourceMappingURL=phone.css.map */

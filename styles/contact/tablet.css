@@ -1,0 +1,33 @@
+@import "../homepage/tablet.css";
+/* colors */
+/* mixins */
+@media (max-width: 1060px) {
+  .section-1-form {
+    flex-direction: column;
+    gap: 41px;
+  }
+  .section-1-form-left {
+    max-width: 100%;
+  }
+  .section-1-form-right {
+    max-width: 100%;
+  }
+  .section-1-header-container {
+    position: relative;
+  }
+  .section-1-header-container-logo {
+    max-width: 360px;
+    position: absolute;
+    top: 80px;
+  }
+}
+@media (max-width: 930px) {
+  .section-1-header-container {
+    position: relative;
+  }
+  .section-1-header-container-info-container {
+    gap: 80px;
+  }
+}
+
+/*# sourceMappingURL=tablet.css.map */

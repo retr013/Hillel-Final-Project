@@ -1,0 +1,51 @@
+@import "../homepage/tablet.css";
+/* colors */
+/* mixins */
+@media (max-width: 1060px) {
+  .section-1-img-wide p {
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 40px;
+  }
+  .section-1-bottom-info-container {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .section-1-bottom-info-container-right {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .section-1-info-container {
+    padding-bottom: 34px;
+    flex-direction: column;
+  }
+  .section-1-info-container-left {
+    margin-bottom: 20px;
+  }
+  .section-1-info-container-right {
+    border-top: 4px solid #E6E6F0;
+  }
+  .section-1-info-container-right-item {
+    border: none;
+    padding: 20px 0 0 0;
+  }
+  .section-1-header-container {
+    position: relative;
+  }
+  .section-1-header-container-logo {
+    max-width: 360px;
+    position: absolute;
+    top: 80px;
+  }
+}
+@media (max-width: 930px) {
+  .section-1-header-container {
+    position: relative;
+  }
+  .section-1-header-container-info-container {
+    gap: 80px;
+  }
+}
+
+/*# sourceMappingURL=tablet.css.map */

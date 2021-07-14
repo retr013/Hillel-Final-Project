@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'TT-Norms-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/TT Norms Pro Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TT-Norms-ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/TT Norms Pro ExtraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TT-Norms-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/TT Norms Pro Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TT-Norms-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/TT Norms Pro Bold.woff') format('woff');
+}

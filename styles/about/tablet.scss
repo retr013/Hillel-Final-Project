@@ -1,0 +1,54 @@
+@import "../homepage/tablet.css";
+@import "../default";
+
+@media (max-width: 1060px) {
+  .section-1 {
+    &-img-wide p {
+      font-size: 70px;
+      line-height: 80px;
+      letter-spacing: 40px;
+    }
+    &-bottom-info-container {
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      &-right {
+        padding-left: 0;
+        margin-top: 20px;
+      }
+    }
+    &-info-container {
+      padding-bottom: 34px;
+      &-left {
+        margin-bottom: 20px;
+      }
+      &-right {
+        border-top: 4px solid $separator-grey;
+        &-item {
+          border: none;
+          padding: 20px 0 0 0;
+        }
+      }
+      flex-direction: column;
+    }
+    &-header-container {
+      position: relative;
+      &-logo {
+        max-width: 360px;
+        position: absolute;
+        top: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .section-1 {
+    &-header-container {
+      position: relative;
+      &-info-container {
+        gap: 80px;
+      }
+    }
+  }
+}

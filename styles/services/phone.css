@@ -1,0 +1,16 @@
+@import "../homepage/phone.css";
+@media (max-width: 768px) {
+  .section-1-header-container-logo {
+    max-width: fit-content;
+  }
+
+  .section-1-header-container-logo a svg {
+    max-width: 80px;
+  }
+
+  .section-1-header-container-logo svg {
+    max-width: 100px;
+  }
+}
+
+/*# sourceMappingURL=phone.css.map */

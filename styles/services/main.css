@@ -1,0 +1,44 @@
+@import "../normalize.css";
+@import "../fonts.css";
+/* colors */
+/* mixins */
+@import "phone.css";
+@import "tablet.css";
+@import "../homepage/main.css";
+* {
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: TT-Norms-Regular, sans-serif;
+}
+
+.section-1 header {
+  margin: 0 auto;
+}
+.section-1-header-container-info-bottom a:nth-child(2) {
+  border-bottom: 2px solid #FFFFFF;
+}
+.section-1-header-container-info-bottom a:nth-child(2):hover {
+  border-color: #F0145A;
+}
+.section-1-header-container-logo {
+  display: flex;
+  max-width: 360px;
+}
+
+.section-2 header {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.section-2-container-bottom-h1 {
+  margin-top: 75px;
+}
+
+.burger {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
